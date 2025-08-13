@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #2c4785 0%, #252c43 100%);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(9, 87, 97, 0.1);
+        }
+    </style>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <script src="hero-animate.js"></script>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">SHIVA KUMAR INDURI</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#certifications" class="text-gray-700 hover:text-blue-600">Certifications</a>
+                    <a href="#connect" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Connect</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Photo -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                    HI I'M SHIVA KUMAR INDURI.
+                    <span class="text-blue-200"></span>
+                    </h1>
+                    <p class="text-lg text-blue-100 max-w-lg">
+                        Showcasing innovative projects at the intersection of artificial intelligence and geoinformatics, with expertise in machine learning, remote sensing, and spatial data analysis.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition">
+                            View Projects
+                        </a>
+                        <a href="#connect" class="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-700 transition">
+                            Connect With Me
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-2xl flex justify-center items-center" style="width:600px; height:500px;">
+    <img 
+        id="hero-img"
+        src="IMAGES/WhatsApp Image 2025-08-11 at 15.49.49_e5826dc4.jpg"
+        alt="AI Geoinformatics student analyzing spatial data with machine learning models displayed on multiple screens"
+        class="object-cover w-full h-full transition-transform duration-300"
+    />
+</div>
+            </div>
+        </div>
+        
+    </section>
+   
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
+                    <p class="text-gray-600 mb-4">
+                        I am an AI Geoinformatics student passionate about applying machine learning techniques to solve complex spatial problems. My academic journey combines rigorous coursework in geographic information systems with advanced training in artificial intelligence.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Technical Skills:
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">ArcGIS/QGIS</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Remote Sensing</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Spatial Analysis</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"> GOOGLE EARTH ENGINE </span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img 
+                           src="IMAGES/landuse.jpg"
+                        alt="Urban land cover classification using deep learning with color-coded zoning map overlay"
+                        class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">AI Land Use Classification</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed a CNN model achieving 92% accuracy in classifying urban land uses from satellite imagery.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">TensorFlow</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">GIS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img 
+                        src="IMAGES/images.jpg"
+                        alt="3D city model visualization with traffic flow patterns and AI-predicted congestion hotspots"
+                        class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">GEE Based Air Qaulity Monitoring</h3>
+                        <p class="text-gray-600 mb-4">
+                            Time-series forecasting model predicting traffic patterns using geospatial temporal data.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">colab</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img 
+                          src="IMAGES/download.jpg" 
+                        alt="Interactive web mapping application showing real-time environmental sensor data and predictive analytics"
+                        class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Environmental Monitoring Dashboard</h3>
+                        <p class="text-gray-600 mb-4">
+                            Web GIS application integrating IoT sensor data with machine learning predictions.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Leaflet</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Resume Section -->
+    <section id="certifications" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Certifications</h2>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Crash Course on Python</h3>
+                            <p class="text-gray-600">Google • 2025</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/79IN27XB45JY" class="text-blue-600 hover:underline">View Certificate</a>
+                        </div>
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="text-xl font-semibold text-gray-800">AI for Geospatial Analysis</h3>
+                            <p class="text-gray-600">DeepLearning.AI • 2025</p>
+                        </div>
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Supply Chain of Agriculture</h3>
+                            <p class="text-gray-600">University of Illinois Urbana-Champaign• 2025</p>
+                             <a href="https://www.coursera.org/account/accomplishments/verify/DL27BI0LBG46" class="text-blue-600 hover:underline">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Download My Resume</h2>
+                        <img 
+                            src="IMAGES/resume-mockup.png" 
+                              alt="Resume preview for Shiva Kumar Induri, AI Geoinformatics student"
+
+                            class="mb-6 rounded-lg shadow-md w-48"
+                        />
+                        <a href="resume/resume.pdf" download class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+    </svg>
+    Download Resume (PDF)
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Current & Upcoming Work</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">AL ML MODELS FOR AGRI TECH</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/3">
+                            <img 
+                          src="IMAGES/crop2.jpg"
+                                alt="Satellite imagery analysis workflow showing climate change indicators"
+                                class="rounded-md"
+                            />
+                        </div>
+                        <div class="w-2/3 pl-4">
+                            <p class="text-gray-600">Developing ML models to predict urban heat island effects using time-series satellite data.</p>
+                            <p class="text-sm text-gray-500 mt-2">Status: In Progress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">HYPER LOCAL AGRI INTELLIGENCE</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/3">
+                            <img 
+                                  src="IMAGES/crop.jpg"
+                                alt="Drone mapping schematic with autonomous flight path planning visualization"
+                                class="rounded-md"
+                            />
+                        </div>
+                        <div class="w-2/3 pl-4">
+                            <p class="text-gray-600">AI-powered AGRI INTELLIGENCE FOR FARMING</p>
+                            <p class="text-sm text-gray-500 mt-2">Status: Planning Phase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+            <p class="mb-8 max-w-2xl mx-auto text-blue-100">
+                Interested in collaboration or opportunities? Feel free to reach out through any of these channels.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href= "https://www.linkedin.com/in/shiva-kumar-induri-7baa85261" class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition">
+                    LinkedIn Profile
+                </a>
+                <a href="mailto:shivakumarinduri19@gmail.com" class="bg-transparent border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-600 transition">
+                    Email Me
+                </a>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2025 SHIVA KUMAR INDURI. All rights</p>
